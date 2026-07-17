@@ -1,8 +1,8 @@
 <!-- docs/_sidebar.md -->
 
-<center>
+<center style="font-size:30px;color:black">
 
-# [emakefun文档中心](/zh-cn/)
+emakefun文档中心
 
 </center>
 
