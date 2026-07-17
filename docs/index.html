@@ -111,13 +111,11 @@
         },
         plugins: [
           function (hook, vm) {
-            hook.ready(function () {
-              if (vm.route.path === '/') {
+            hook.mounted(function () {
+              if (vm.route.path === '/' || vm.route.path === '/emakefun-docsify' || vm.route.path === '/emakefun-docsify/') {
                 location.href = '#/zh-cn/';
               }
             });
-          },
-          function (hook, vm) {
             hook.afterEach(function (html) {
               var container = document.createElement('div');
               container.innerHTML = html;
